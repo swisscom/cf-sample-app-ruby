@@ -1,7 +1,7 @@
 Bundler.require :web
 Bundler.require :development if development?
 
-get '/assets/style.css' do
+get '/style.css' do
   scss :style
 end
 
