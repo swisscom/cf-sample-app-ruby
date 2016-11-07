@@ -10,7 +10,7 @@ GEM
     haml (4.0.7)
       tilt
     multi_json (1.12.1)
-    puma (3.4.0)
+    puma (3.6.0)
     rack (1.6.4)
     rack-coffee (1.0.3)
       coffee-script
@@ -47,4 +47,4 @@ DEPENDENCIES
   sinatra-reloader
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
