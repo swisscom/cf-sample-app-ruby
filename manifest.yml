@@ -1,0 +1,13 @@
+---
+applications:
+- name: my-ruby-app
+  memory: 64MB
+  instances: 1
+
+  host: my-random-hostname
+
+  services:
+  - my-mariadb
+
+  env:
+    RACK_ENV: production
