@@ -1,7 +1,7 @@
 ---
 applications:
 - name: my-ruby-app
-  memory: 64MB
+  memory: 128MB
   instances: 1
 
   host: my-random-hostname

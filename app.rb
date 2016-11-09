@@ -26,18 +26,18 @@ get '/' do
   haml :index
 end
 
-# endpoint to create a new kitten (e.g. /create-kitten?name=garfield)
-post '/create-kitten' do
-  kitten_name = params[:name]
-  DB[:kittens].insert(:name => kitten_name)
-  "Kitten #{kitten_name} added"
-end
-
 # here you can retrieve all the kittens in our MariaDB
-get '/db' do
+get '/kittens' do
   content_type :json
   kittens = DB[:kittens].all
   kittens.to_json
+end
+
+# endpoint to create a new kitten (e.g. /create-kitten?name=garfield)
+post '/kittens' do
+  kitten_name = params[:name]
+  DB[:kittens].insert(:name => kitten_name)
+  "Kitten #{kitten_name} added"
 end
 
 # our not-found route which serves the 404 view
