@@ -13,5 +13,5 @@ A sample [Sinatra](http://www.sinatrarb.com/) application to deploy to Cloud Fou
 ## Run in the cloud
 
 1. Install the [cf CLI](https://github.com/cloudfoundry/cli#downloads)
-1. Run `cf push my-ruby-app -m 64M --random-route`
+1. Run `cf push`
 1. Visit the given URL
