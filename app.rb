@@ -5,7 +5,7 @@ Bundler.require :development if development?
 # check if running in the cloud and setting the MariaDB settings accordingly
 if ENV['VCAP_SERVICES']
   vcap_services = JSON.parse(ENV['VCAP_SERVICES'])
-  DB = Sequel.connect(vcap_services['mariadb'][0]['credentials']['uri'])
+  DB = Sequel.connect(vcap_services['mariadbent'][0]['credentials']['uri'])
 else
   DB = Sequel.connect('mysql://localhost:3306/dbname')
 end
